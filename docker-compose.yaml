@@ -1,0 +1,16 @@
+name: simple
+
+services:
+  app:
+  # sekar11 adalah username docker hub
+    image: sekar11/simple-app
+  # jika docker file ada diluar folder app maka tulis . saja
+    build: ./app
+    ports:
+      - "5000:3000"
+  # storage folder images
+    volumes:
+      - vol-simple:/app/public/images/
+
+volumes:
+  vol-simple:
