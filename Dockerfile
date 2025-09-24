@@ -7,4 +7,4 @@ RUN npm install
 
 # optional untuk memberitahu port aplikasi kita berjalan di 3000
 EXPOSE 3000       
-CMD [ "npm start" ]
+CMD ["npm","start"]
